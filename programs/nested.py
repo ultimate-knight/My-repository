@@ -5,8 +5,8 @@ door=input("enter door number:")
 
 if door=="1":
     print("There is a giant bear here eating a cheese cake.")
-    print("What do u do?")
     print("1. Take the cake.")
+    print("What do u do?")
     print("2. Scream at the bear.")
 
     bear=input("enter any number:")
@@ -35,7 +35,7 @@ elif door=="2":
       print("good job.")
 else:
    print("you stumble around and fall on knife and die.Good job!")
-   
+
 
 
  
