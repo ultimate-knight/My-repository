@@ -1,0 +1,9 @@
+def findTheDistanceValue(self, arr1, arr2, d):
+    distance = 0
+
+    for num1 in arr1:
+        # Check if there is any element in arr2 such that |num1 - num2| <= d
+        if all(abs(num1 - num2) > d for num2 in arr2):
+            distance += 1
+
+        return distance
