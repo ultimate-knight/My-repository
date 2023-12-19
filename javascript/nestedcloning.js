@@ -21,6 +21,7 @@ let user1 = {
   
   alert( user1.sizes === clone.sizes ); 
   
-  // user and clone share sizes
   user1.sizes.width = 60;    
   alert(clone.sizes.width); 
+
+  

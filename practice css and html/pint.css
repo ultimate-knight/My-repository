@@ -1,0 +1,22 @@
+body {
+    background-image: url("https://cdn.carbuzz.com/gallery-images/1600/718000/400/718484.jpg");
+
+}
+
+main {
+    background-color: burlywood;
+}
+
+p {
+    text-align: center;
+    display: inline-block;
+    width: 50px;
+    border: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 1px;
+    max-width: 150px;
+    font-style: italic;
+    border-color: navajowhite;
+    font-size: 100%;
+    margin-bottom: 5%;
+}

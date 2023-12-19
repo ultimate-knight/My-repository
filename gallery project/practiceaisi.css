@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:  space-around;
+    border: 2px solid black;
+    height: 60vh;
+    flex-wrap: wrap;
+
+}
+
+
+
+
+
+
+
+.number {
+    flex-direction: row-reverse;
+    border: 2px;
+    border-color: black;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    position: static;
+}
+
+.ek {
+    order: 3;
+    flex-shrink: 2;
+    align-self: center;
+}
+
