@@ -1,7 +1,0 @@
-def intersection(self, nums):
-    common_elements = set(nums[0])
-
-    for subarray in nums[1:]:
-        common_elements.intersection_update(subarray)
-
-    return sorted(list(common_elements))
