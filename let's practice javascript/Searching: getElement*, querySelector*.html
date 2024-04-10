@@ -1,0 +1,62 @@
+<!--document.getElementById or just id-->
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <meta charset="UTF-8">
+    <meta name="viewport" "width=device-width, initial-scale=1.0">
+    <body>
+       <div id="element">
+            <div id="elem">hieroglyphics</div>
+        </div>--->
+        <ul> 
+            <li>hi</li>
+            <li>how</li>
+            <li>are</li>
+        </ul>
+        <ul>
+            <li>are</li>
+            <li>u</li>
+            <li>going</li>
+        </ul>--->
+
+        <a href="http://example.com/file.zip">...</a>
+        <a href="http://ya.ru">...</a>--->
+
+
+    <h1>Contents</h1>
+    <div class="contents">
+        <ul class="book">
+        <li class="chapter">Chapter 1</li>
+        <li class="chapter">Chapter 2</li>
+        </ul>
+    </div>
+
+
+        <script>
+            let elm=document.getElementById("elem");
+            elm.style.backgroundColor="yellow";
+            //querySelectorAll//
+            let elem=document.querySelectorAll('ul > li:first-child');
+            for(let elm of elem){
+                alert(elm.innerHTML);
+            }
+
+            for (let elem of document.body.children) {
+                if (elem.matches('a[href$="zip"]')) {
+      alert("The archive reference: " + elem.href );
+    }
+  }*/
+
+  let chapter = document.querySelector('.chapter'); // LI
+    alert(chapter.closest('.book')); // UL
+    alert(chapter.closest('.contents')); // DIV
+    alert(chapter.closest('h1')); // null (because h1 is not an ancestor)
+            
+        </script>
+
+
+
+            
+
+    </body>
+</html>

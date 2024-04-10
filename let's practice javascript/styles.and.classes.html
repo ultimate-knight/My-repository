@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>styles and classes</title>
+    <style>body {color: 'red'; margin: 5px} </style>
+</head>
+<body class="main-page">
+    <div id="div">Button</div>
+    <script>
+        //className and classList//
+        /*Changing a class is one of the most often used actions in scripts.
+        In the ancient time, there was a limitation in JavaScript: a reserved word like "class" could not be an object property.
+        That limitation does not exist now, but at that time it was impossible to have a "class" property, like elem.class.So for classes the similar-looking property "className" was introduced: the elem.className corresponds to the "class" attribute.
+        */
+        //alert(document.body.className);//
+        /*The elem.classList is a special object with methods to add/remove/toggle a single class.*/
+        //document.body.classList.add('Token');//
+        //alert(document.body.className);//
+        /*Methods of classList:
+          elem.classList.add/remove("class") – adds/removes the class.
+          elem.classList.toggle("class") – adds the class if it doesn’t exist, otherwise removes it.
+          elem.classList.contains("class") – checks for the given class, returns true/false.
+        */
+       //for(let name of document.body.classList){
+        //alert(name);
+       //}
+       //Element style//
+       /*
+        For multi-word property the camelCase is used:
+        background-color  => elem.style.backgroundColor
+        z-index           => elem.style.zIndex
+        border-left-width => elem.style.borderLeftWidth
+       */
+       /*document.body.style.backgroundColor=prompt('background color?', 'red');
+
+        //Resetting the style property//
+        /*Sometimes we want to assign a style property, and later remove it.
+        For instance, to hide an element, we can set elem.style.display = "none".
+        Then later we may want to remove the style.display as if it were not set. Instead of delete elem.style.display we should assign an empty string to it: elem.style.display = "".*/
+        /*document.body.style.display="none";
+        setTimeout(() => document.body.style.display="", 1000);*/
+
+        /*document.body.style.background="blue";
+        setTimeout(() => document.body.style.removeProperty('background'), 1000);*/
+        /*div.style.cssText=`color: red !important;
+        background-color: yellow;
+        width: 100px;
+        text-align: center;
+    `;*/
+        /*alert(div.style.cssText);*/
+
+        //Mind the units//
+        /*Don’t forget to add CSS units to values.For instance, we should not set elem.style.top to 10, but rather to 10px. Otherwise it wouldn’t work:*/
+        /*document.body.style.margin='50px';
+        alert(document.body.style.margin);
+        alert(document.body.style.marginTop);
+        alert(document.body.style.marginBottom);
+
+
+        //Computed styles: getComputedStyle//
+        /*The style property operates only on the value of the "style" attribute, without any CSS cascade.*/
+        let computedstyle=getComputedStyle(document.body);
+        alert(computedstyle.marginTop);
+        alert(computedstyle.color);
+
+
+
+    </script>
+    
+</body>
+</html>

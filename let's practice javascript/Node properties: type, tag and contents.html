@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!--hi
+        <!--comment on-->
+        <!--<div id="same"><h1>hi how are u</h1>
+            <p>how u doing</p>
+        </div>--->
+
+        <!--<div>Both divs below are hidden</div>
+
+        <div hidden>With the attribute "hidden"</div>
+
+        <div id="elem">JavaScript assigned the property "hidden"</div>--->
+        <input type="text" value="value" id="elem">
+        <script>
+            /document.addEventListener("DOMContentLoaded", function() {
+                alert(document.body.constructor.name);/*To see the DOM node class name, we can recall that an object usually has the constructor property. It references the class constructor, and constructor.name is its name:*/
+                alert( document.body ); //We also can use instanceof to check the inheritance://
+                alert( document.body instanceof HTMLBodyElement ); // true
+                alert( document.body instanceof HTMLElement ); // true
+                alert( document.body instanceof Element ); // true
+                alert( document.body instanceof Node ); // true
+                alert( document.body instanceof EventTarget ); // true*/
+                
+                
+                let elem = document.body;
+            // let's examine: what type of node is in elem?
+                alert(elem.nodeType); // 1 => element
+
+             // and its first child is...
+                alert(elem.firstChild.nodeType); // 3 => text
+
+            // for the document object, the type is 9
+                alert( document.nodeType ); // 9*/
+            /*});*/
+
+        //The “nodeType” property//
+        let elem=document.body;
+        alert(elem.nodeType);
+        alert(elem.firstChild.nodeType);
+        alert(document.nodeType);/*In modern scripts, we can use instanceof and other class-based tests to see the node type, but sometimes nodeType may be simpler. We can only read nodeType, not change it.*/
+        
+        //Tag: nodeName and tagName//
+        alert(document.body.tagName);
+        alert(document.body.nodeName);
+        alert( document.body.firstChild.tagName ); // undefined (not an element)
+        alert( document.body.firstChild.nodeName ); // #comment
+        // for document
+        alert( document.tagName ); // undefined (not an element)
+        alert( document.nodeName ); // #document*/ 
+        
+        //innerHTML: the contents//
+        alert( document.body.innerHTML ); // read the current contents
+        document.body.innerHTML = 'The new BODY!'; // replace it/*The innerHTML property allows to get the HTML inside the element as a string.We can also modify it. So it’s one of the most powerful ways to change the page.*/
+        //outerHTML: full HTML of the element//
+        /*The outerHTML property contains the full HTML of the element. That’s like innerHTML plus the element itself.*/
+        let sem=document.querySelector('#same');
+        alert(sem);
+        same.outerHTML='<p>hi how are</p>';
+        alert(same.outerHTML);
+
+        //nodeValue/data: text node content//
+        /*The innerHTML property is only valid for element nodes.Other node types, such as text nodes, have their counterpart: nodeValue and data properties. These two are almost the same for practical use, there are only minor specification differences. So we’ll use data, because it’s shorter.*/
+        let txt=document.body.firstChild;
+        alert(txt.data);
+        let sem=txt.nextSibling;
+        alert(sem.data)*/
+
+        //textContent: pure text//
+        /*The textContent provides access to the text inside the element: only text, minus all <tags>*/
+        let smh=document.querySelector('#same');
+        alert(smh.textContent);*/
+
+        let name=prompt("what's ur name", "<strong>name a few</strong>");
+        same.innerhtml=name;
+        same.textcontent=name;*/
+
+        elem.hidden = true;
+        setInterval(() => elem.hidden = !elem.hidden, 1000);*/
+
+
+
+        alert(elem.type);
+        alert(elem.id);
+        alert(elem.value)
+
+
+        /*
+        Main DOM node properties are:
+
+        nodeType
+        We can use it to see if a node is a text or an element node. It has a numeric value: 1 for elements,3 for text nodes, and a few others for other node types. Read-only.
+        nodeName/tagName
+        For elements, tag name (uppercased unless XML-mode). For non-element nodes nodeName describes what it is. Read-only.
+        innerHTML
+        The HTML content of the element. Can be modified.
+        outerHTML
+        The full HTML of the element. A write operation into elem.outerHTML does not touch elem itself. Instead it gets replaced with the new HTML in the outer context.
+        nodeValue/data
+        The content of a non-element node (text, comment). These two are almost the same, usually we use data. Can be modified.
+        textContent
+        The text inside the element: HTML minus all <tags>. Writing into it puts the text inside the element, with all special characters and tags treated exactly as text. Can safely insert user-generated text and protect from unwanted HTML insertions.
+        hidden
+        When set to true, does the same as CSS display:none.
+        DOM nodes also have other properties depending on their class. For instance, <input> elements (HTMLInputElement) support value, type, while <a> elements (HTMLAnchorElement) support href etc. Most standard HTML attributes have a corresponding DOM property.
+
+        However, HTML attributes and DOM properties are not always the same, as we’ll see in the next chapter.
+        */
+
+        
+        </script>
+    </body>
+</html>

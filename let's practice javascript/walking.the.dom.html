@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div>hi i ain't working</div>
+        <ul>
+            <li>information</li>
+        </ul>
+        <div>end</div> 
+        <table id="table">
+            <tr>
+                <td>one</td><td>two</td><td>three</td>
+            </tr>
+
+
+            <tr>
+                <td>1</td><td>2</td><td>3</td>
+            </tr>
+        </table>
+        <script>
+            for(i=0; i<document.body.childNodes.length; i++){
+                alert(document.body.childNodes[i]);
+            }
+
+            for(let node of document.body.childNodes){
+                alert(node);
+            }
+
+            alert(Array.from(document.body.childNodes).filter );*/
+
+            for (let prop in document.body.childNodes) alert(prop);*/
+
+
+            // Siblings and the parent//
+            /*Siblings are nodes that are children of the same parent.For instance, here <head> and <body> are siblings:
+            <html>
+            <head>...</head><body>...</body>
+            </html>
+            <body> is said to be the “next” or “right” sibling of <head>,
+            <head> is said to be the “previous” or “left” sibling of <body>.
+            The next sibling is in nextSibling property, and the previous one – in previousSibling.
+            The parent is available as parentNode.
+            */
+            /*alert(document.body.previousSibling);
+            alert(document.head.nextSibling);
+            alert(document.body.parentNode===document.documentElement);
+
+            /*Element-only navigation
+            children – only those children that are element nodes.
+            firstElementChild, lastElementChild – first and last element children.
+            previousElementSibling, nextElementSibling – neighbor elements.
+            parentElement – parent element.
+            */
+
+             alert( document.documentElement.parentNode ); // document
+            alert( document.documentElement.parentElement ); // null
+
+            for (let elem of document.body.children) {
+                alert(elem); // DIV, UL, DIV, SCRIPT
+            }*/
+
+            //More links: tables//
+            /*
+            Tables are a great example of that, and represent a particularly important case:
+
+            The <table> element supports (in addition to the given above) these properties:
+
+            table.rows – the collection of <tr> elements of the table.
+            table.caption/tHead/tFoot – references to elements <caption>, <thead>, <tfoot>.
+            table.tBodies – the collection of <tbody> elements (can be many according to the standard, but there will always be at least one – even if it is not in the source HTML, the browser will put it in the DOM).
+            <thead>, <tfoot>, <tbody> elements provide the rows property:
+
+            tbody.rows – the collection of <tr> inside.
+            <tr>:
+
+            tr.cells – the collection of <td> and <th> cells inside the given <tr>.
+            tr.sectionRowIndex – the position (index) of the given <tr> inside the enclosing <thead>/<tbody>/<tfoot>.
+            tr.rowIndex – the number of the <tr> in the table as a whole (including all table rows).
+            <td> and <th>:
+            td.cellIndex – the number of the cell inside the enclosing <tr>.*/
+            
+            let  td=table.rows[0].cells[1];
+            td.style.backgroundColor="blue";
+
+
+        </script>
+    </body>
+</html>
+<!-- 
+They are just shorthands. If there exist child nodes, then the following is always true:
+
+elem.childNodes[0] === elem.firstChild
+elem.childNodes[elem.childNodes.length - 1] === elem.lastChild
+//
+There’s also a special function elem.hasChildNodes() to check whether there are any child nodes.
+
+
+--->

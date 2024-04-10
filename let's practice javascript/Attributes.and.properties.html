@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Attributes and properties</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles.css"  rel="stylesheet">
+    </head>
+    <body id="fest" something="standard" type="text" data-about="Elephants">
+        <input id="input" type="text">
+        <div id="element" about="nothing"></div>
+        <input>-->
+        <input id="input" type="checkbox" checked>
+        <div id="div" style="color: red; font-size: 100%">rendang</div> 
+        <a id="a" href="hello">link</a>
+
+        <style>
+            .order[data-order-state="new"] {
+              color: green;
+            }
+          
+            .order[data-order-state="pending"] {
+              color: blue;
+            }
+          
+            .order[data-order-state="canceled"] {
+              color: red;
+            }
+          </style>
+          
+          <div id="order" class="order" data-order-state="new">
+            A new order.
+          </div>
+
+        <script>
+            //DOM properties//
+            /*We’ve already seen built-in DOM properties. There are a lot. But technically no one limits us, and if there aren’t enough, we can add our own.
+            DOM nodes are regular JavaScript objects. We can alter them.
+            For instance, let’s create a new property in document.body:
+            */
+           document.body.mydata={
+            title: "maaz",
+            name: "baqtiyaar",
+           }
+           alert(document.body.mydata.title);
+           alert(document.body.mydata.name);*/
+
+           document.body.sayTagName=function (){
+            alert(this.tagName);
+           }
+           document.body.sayTagName();*/
+
+
+
+           Element.prototype.sayhi=function(){
+            alert(`hi i'm ${this.tagName}`);
+           }
+           document.documentElement.sayhi();
+           document.head.sayhi();
+
+
+
+           //HTML attributes//
+           alert(document.body.id);
+           alert(document.body.something);
+
+           alert(document.body.type);
+           alert(input.type);*/
+           /*
+           So, if an attribute is non-standard, there won’t be a DOM-property for it. Is there a way to access such attributes?
+            Sure. All attributes are accessible by using the following methods:
+            elem.hasAttribute(name) – checks for existence.
+            elem.getAttribute(name) – gets the value.
+            elem.setAttribute(name, value) – sets the value.
+            elem.removeAttribute(name) – removes the attribute.
+            These methods operate exactly with what’s written in HTML.
+           */
+
+
+           alert(document.body.getAttribute('something'));
+
+            alert(element.getAttribute("about"));
+            element.setAttribute('Test', '123');
+            alert(element.outerHTML);
+            for(let attr of element.attributes){
+                alert(`${attr.name}=${attr.value}`);
+            }
+
+            //Property-attribute synchronization//
+            /*When a standard attribute changes, the corresponding property is auto-updated, and (with some exceptions) vice versa.In the example below id is modified as an attribute, and we can see the property changed too. And then the same backwards:*/
+            let input=document.querySelector('input');
+            input.setAttribute('id', 'id');
+            alert(input.id);
+            input.id='newid';
+            alert(input.getAttribute('id'));
+
+
+
+            let input = document.querySelector('input');
+            // attribute => property
+            input.setAttribute('value', 'text');/*In the example above:Changing the attribute value updates the property.But the property change does not affect the attribute.*/
+            alert(input.value); // text
+            // NOT property => attribute
+            input.value = 'newValue';
+            alert(input.getAttribute('value')); // text (not updated!)*/
+
+
+            //DOM properties are typed
+            /*DOM properties are not always strings. For instance, the input.checked property (for checkboxes) is a boolean:*/
+            alert(input.getAttribute('checked'));
+            alert(input.checked);
+
+           alert(div.getAttribute('style'));
+            alert(div.style.color);
+            alert(div.style);*/
+
+
+            alert(a.getAttribute('href'));
+            alert(a.href);
+            /*If we need the value of href or any other attribute exactly as written in the HTML, we can use getAttribute.*/
+
+
+            //Non-standard attributes, dataset//
+            alert(document.body.dataset.about);
+            /*Multiword attributes like data-order-state become camel-cased: dataset.orderState.*/
+            // read//
+            alert(order.dataset.orderState); // new
+            // modify
+            order.dataset.orderState = "pending"; // (*)
+
+
+
+
+           
+
+
+
+
+           
+        </script>
+</body>
+</html>
+ 
