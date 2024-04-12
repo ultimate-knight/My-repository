@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="blog">
+        <p>
+            The Non-Aligned Movement (NAM) was founded in 1961 with the view to advancing interests of developing countries in the context of Cold War confrontation. In its first three decades, the Movement played a crucial role in decolonization, formation of new independent states, and democratization of international relations.
+        </p>
+    </div>
+    
+</body>
+<script>
+    let centerY=document.documentElement.clientHeight/2;
+    let centerX=document.documentElement.clientWidth/2;
+    let elem=document.elementFromPoint(centerX, centerY);
+    elem.style.background="red";
+    alert(elem.tagName);
+
+    /*
+    Any point on the page has coordinates:
+    Relative to the window – elem.getBoundingClientRect().
+    Relative to the document – elem.getBoundingClientRect() plus the current page scroll.
+    Window coordinates are great to use with position:fixed, and document coordinates do well with position:absolute.
+    Both coordinate systems have their pros and cons; there are times we need one or the other one, just like CSS position absolute and fixed.    
+    */
+</script>
+</html>
