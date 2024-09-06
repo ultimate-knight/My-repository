@@ -1,0 +1,26 @@
+* {
+    display: block;
+}
+
+input[type="text"] {/*pseudo selector*/
+    background-color: blanchedalmond;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 23px;
+}
+
+a[target] {
+    color: rgb(123,200,123);
+    text-decoration: underline;
+
+}
+
+a[target]:hover {
+    color:black;
+    box-shadow: 100px 0px 20px 30px rgba(123,0,90,80);
+
+}
+
+li:nth-child(even) {
+    color: aquamarine;
+}
