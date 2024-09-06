@@ -1,0 +1,25 @@
+.navigation {
+    color: rebeccapurple;
+}
+
+.navbar{
+    display: flex;
+}
+
+.item {
+    list-style: none;
+    padding: 13px 13px;
+    margin-bottom: 1px;
+    
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+
+.item:hover {
+    color:aqua;
+}
+
