@@ -1,0 +1,221 @@
+.calculator {
+    display: grid;
+    height: 450px;
+    width: 225px;
+    background-color: black;
+    /*grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr) ;*/
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    border-radius: 20%;
+    column-gap: 10px;
+    position: relative;
+    top: 100px;
+    left: 600px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h1 {
+    color: white;
+    position: relative;
+    left: 180px;
+    top: 60px;
+}
+
+.cal {
+    background-color: rgb(123,90,90);
+    /*height: 30px;
+    width: 30px;*/
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    /*height: 30px;
+    width: 50px;*/
+    
+}
+
+
+.cal1 {
+    position: relative;
+    left: -58px;
+    top: 130px;
+    height: 50px;
+    width: 50px;
+}
+
+.cal2, .cal3, .cal4 {
+    position: relative;
+    top: 130px;
+    left: -30px;
+    height: 50px;
+    width: 50px;
+}
+.cal2 {
+    position: relative;
+    left: -61px;
+    
+
+}
+
+.cal3 {
+    position: relative;
+    left: -64px;
+}
+
+.cal4 {
+    position: relative;
+    left: 172px;
+    top: 42px;
+
+}
+
+.cal5 {
+    position: relative;
+    left: -55px;
+    top: 30px;
+}
+
+.cal5, .cal6, .cal7, .cal8 {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 95px;
+}
+
+.cal6, .cal7, .cal8 {
+    position: relative;
+    right: 30px;
+}
+
+
+
+.cal7 {
+    position: relative;
+    left: -63px;
+    top: 95px;
+}
+
+.cal6 {
+    position: relative;
+    left: -58px;
+}
+
+.cal8 {
+    position: relative;
+    left: 174px;
+    top: 8px;
+}
+
+.cal9 {
+    position: relative;
+    left: -55px;
+    top: 60px;
+}
+
+.cal9, .cal10, .cal11, .cal12 {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 60px;
+   
+}
+
+.cal10, .cal11, cal12 {
+    position: relative;
+    right: 30px;
+}
+
+.cal10 {
+    position: relative;
+    left: -58px;
+}
+
+.cal11 {
+    position: relative;
+    left: -63px;
+    top: 60px;
+}
+
+.cal12 {
+    position: relative;
+    left: 175px;
+    top: 80px;
+}
+
+
+
+.cal13, .cal14, .cal15, .cal16 {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: -4px;
+
+}
+
+.cal13 {
+    position: relative;
+    right: 53px;
+    top: 25px;
+}
+
+.cal14 {
+    position: relative;
+    left: -56px;
+    top: 25px;
+}
+
+.cal15 {
+    position: relative;
+    left: -60px;
+    top: 25px;
+}
+
+.cal16 {
+    position: relative;
+    left: 120px;
+    top: -10px;
+}
+
+.cal17, .cal18, .cal19, .cal20 {
+    position: relative;
+    bottom: 50px;
+}
+
+.cal17 {
+    position: relative;
+    right: 53px;
+    top: -10px;
+}
+
+.cal18 {
+    position: relative;
+    left: -56px;
+    top: -10px;
+}
+
+.cal19 {
+    position: relative;
+    left: -5px;
+    top: -113px;
+
+}
+
+.cal20 {
+    position: relative;
+    left: 175px;
+    top: -110px;
+
+}
+
+h3 {
+    color: white;
+    cursor: pointer;
+    position: relative;
+    left: 18px;
+}
+
+h1 {
+    color: white;
+}
+
