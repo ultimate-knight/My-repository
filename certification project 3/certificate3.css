@@ -1,0 +1,151 @@
+
+  * {
+   list-style-type: none; 
+
+  }
+  
+  
+  .code {
+    border: 1px solid black;
+    padding: 10px 20px;
+    background-color: rgb(211,211,211);
+  }
+  
+  .code2 {
+    border: 1px solid grey;
+    padding: 10px 20px;
+    background-color:  rgb(211,211,211);
+  }
+  
+  .code3 {
+    border: 1px solid grey;
+    padding: 10px 20px;
+    background-color:  rgb(211,211,211);
+  }
+  
+  .code4 {
+    border: 1px solid grey;
+    padding: 10px 20px;
+    background-color:  rgb(211,211,211);
+  }
+  
+  .code5 {
+    border: 1px solid grey;
+    padding: 10px 20px;
+    background-color:  rgb(211,211,211);
+  }
+  
+  .code6 {
+    border: 1px solid grey;
+    padding: 10px 20px;
+    background-color:  rgb(211,211,211);
+  }
+  
+  .code7 {
+    border: 1px solid grey;
+    padding: 10px 20px;
+    background-color:  rgb(211,211,211);
+  }
+  
+  .code8 {
+    border: 1px solid grey;
+    padding: 10px 20px;
+    background-color:  rgb(211,211,211);
+  }
+  
+  .code9 {
+    border: 1px solid grey;
+    padding: 10px 20px;
+    background-color:  rgb(211,211,211);
+  }
+  
+  .code10 {
+    border: 1px solid grey;
+    padding: 10px 20px;
+    background-color:  rgb(211,211,211);
+  }
+  
+  .code11 {
+    border: 1px solid grey;
+    padding: 10px 20px;
+    background-color:  rgb(211,211,211);
+  }
+  
+  .code12 {
+    border: 1px solid grey;
+    padding: 10px 20px;
+    background-color:  rgb(211,211,211);
+  }
+  
+  
+ .hain {
+  position: fixed;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: rgba(230,230,230);
+  border: 1px solid black;
+ } 
+
+ .hain ul a {
+  display: block;
+  font-size: 15px;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+ }
+
+
+ .hain ul a {
+  line-height: 50px;
+  padding-left: -80px;
+  padding-bottom: 0%;
+  padding-top: 0%;
+  border-bottom: 1px solid black;
+ }
+
+ b
+
+
+ .hain header {
+  text-align: center;
+  user-select: none;
+  background-color: white;
+  padding-top:  10%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  align-items: center;
+  user-select: none;
+
+ }
+
+ .hain header {
+  position: relative;
+  top: -16px;
+ }
+
+ .hain li:hover a {
+  color: rgb(255,255,255);
+ }
+  
+  
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+
+  .main-section {
+    position: relative;
+    left: 16.7%;
+    width: 80%;
+    height: 100%;
+  }
+
+  
+  
+  
+  
+  
