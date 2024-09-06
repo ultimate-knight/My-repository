@@ -1,0 +1,24 @@
+# a=123;
+# b="maaz";
+# c=None;
+# d=True;
+# e=2.3;
+# f=complex(9, 2);
+# print(a);
+# print(b);
+# print(f);
+# print(type(a));
+# print(type(b));
+# print(type(c));
+# print(type(d));
+# print(type(e));
+# print(type(f));
+list1=[2,34,56,[34,56],['apples','oranges']];
+tuples=(23,56,'maaz');
+dict={"name": 'maaz',"age": 22};
+print(dict);
+print(list1);
+print(tuples);
+# print("The type of a is", type(a));
+# print("The type of b is", type(b));
+# print("The type")
