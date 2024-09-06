@@ -1,0 +1,382 @@
+* {
+    width: 2000px;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+  }
+  
+  @media(min-width: 300px and max-width: 100px) {
+      * {
+        color: black;
+      }
+    }
+  
+  
+  #navbar {
+      position: fixed;
+      top: -13px;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background-color: #ea1244;
+      color: #ffaaee;
+      padding: -5%;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for visual separation */
+   /* Ensure the navigation bar is above other elements */
+      z-index: 10000;
+    }
+    
+    #navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+    }
+    
+    #navbar ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    
+    #navbar a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px; /* Adjust the font size as needed */
+    }
+    
+    #navbar ul li a:hover {
+        color: rgb(23,47,134);
+    }
+  
+  
+  img {
+    height: 200px;
+    width: 300px;
+  }
+  
+  #portfolio {
+    width: 1200px;
+    height: 600px;
+  }
+  
+  
+  body {
+    background-color: rgb(0,0,45);
+  }
+
+  #peather {
+    position: relative;
+    top: 200px;
+    height: 400px;
+    width: 400px;
+  }
+  
+  h1 {
+    color: white;
+    font-size: 25px;
+    text-transform: capitalize;
+    text-decoration: underline;
+  }
+
+  h1 {
+    position: relative;
+    top: 10px;
+    left: 400px;
+  }
+  
+  h2 {
+    color: white;
+    position: relative;
+    top: 200px;
+    font-size: 30px;
+    text-decoration: underline;
+  }
+  
+  #weather {
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    
+  
+  }
+  
+  #weather
+  {
+    background-color: ; 
+    padding-right: -10px;
+    padding-left: 77px
+  
+  }
+  #weather {
+    position: relative;
+    top: 200px;
+    right: 400px;
+    overflow: auto;
+    
+  }
+
+  #zeather {
+    position: relative;
+    top: 200px;
+    right: 150px;
+    height: 400px;
+    width: 400px;
+  }
+
+  #quiz {
+    height: 400px;
+    width: 400px;
+    position: relative;
+    left: 730px;
+    bottom: 200px;
+
+  }
+  
+  
+  
+  #weather:hover {
+    color: green;
+  }
+  
+  #budget {
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+  }
+
+  #quiz-app {
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    left: 500px;
+    bottom: 187px;
+  }
+  
+  #quiz-app:hover{
+    color:aqua;
+
+  }
+
+  #budget {
+    position: relative;
+    left: 580px;
+    bottom: 187px;
+    padding-top: 23px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    padding-left: 50px;
+  
+  }
+  
+  #budget {
+    width: 1500px;
+  }
+  
+  #budget:hover {
+    color: green;
+  
+  }
+  
+  #budget {
+    background-color: ;
+    
+  
+  }
+  
+  #About-us {
+    height: 500px;
+    width: 1500px;
+    background-color: rgb(123,89,90);
+    padding: 34px 40px 200px 40px;
+    position: relative;
+    left: -20px;
+    top: -10px;
+    right: 100px;
+  }
+
+  #blue1 {
+    height: 40px;
+    width: 400px;
+    background-color: brown;
+    position: relative;
+    top: -210px;
+  }
+
+  #eater {
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    top: 10px;
+    left: 100px;
+  }
+
+  #eater:hover {
+    color:aqua;
+    padding-left: 10px;
+  }
+  
+  
+  #blue2 {
+    height: 40px;
+    width: 403px;
+    background-color: brown;
+    position: relative;
+    left: 442px;
+    top: -250px;
+  }
+
+  #kudget {
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    top: -7px;
+    left: 100px;
+  }
+
+  #kudget:hover {
+    color: aqua;
+    padding-left: 20px;
+  }
+
+  #blue3 {
+    height: 40px;
+    width: 403px;
+    background-color: brown;
+    position: relative;
+    left: 880px;
+    top: -290px;
+  }
+
+  #kiger {
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    top: 10px;
+    left: 150px;
+  }
+
+  #kiger:hover  {
+    color: aqua;
+    padding-left: 10px;;
+
+  }
+
+  #footer {
+    height: 500px;
+    width: 2800px;
+    background-color: rgb(41, 128, 185);
+  }
+
+  #succeed {
+    text-decoration: none;
+    position: relative;
+    top: 150px;
+    left: 400px;
+    font-size: 50px;
+  }
+
+  #link {
+    position: relative;
+    right: 40px;
+  }
+
+  .code {
+    color: white;
+    position: relative;
+    left: 600px;
+    top: 130px;
+    font-size: 30px;
+  }
+
+   #insta {
+    height: 300px;
+    width: 30px;
+  }
+
+  #twitter {
+    position: relative;
+    right: 1200px;
+    top: 200px;
+    color: white;
+    text-transform: capitalize;
+    font-size: 20px;
+  }
+
+   #twitter:hover {
+    padding-left: 5px;;
+
+  }
+
+  #twit {
+    height: 30px;
+    width: 50px;
+    position: relative;
+    right: 1200px;
+    top: 210px;
+    color: white;
+
+  }
+
+  #instagram {
+    color: white;
+    text-transform: capitalize;
+    font-size: 20px;
+    position: relative;
+    left: 700px;
+    top: 200px;
+  }
+
+  #instagram:hover {
+    padding-left: 2px;
+  }
+
+  #pic {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top: 210px;
+    left: 690px;
+  }
+
+  #git {
+    color: white;
+    text-transform: capitalize;
+    font-size: 20px;
+    position: relative;
+    top: 201px;
+    left: 310px;
+  }
+
+  #git:hover {
+    padding-left: 1px;
+
+  }
+
+
+  .fa-github {
+    position: relative;
+    top: -207px;
+    left: 300px;
+  }
+
+  #hub {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    left: -1800px;
+    top: 209px;
+  }
+
+  #submit {
+    width: 200px;
+    height: 50px;
+    position: relative;
+    right: -550px;
+    top: -200px;
+    font-size: 20px;
+    background-color: brown;
+    border: none;
+  }
+
+  #submit:hover {
+    color: rgb(78,90,87);
+  }
